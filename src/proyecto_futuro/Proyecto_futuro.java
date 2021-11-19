@@ -4,13 +4,10 @@ package proyecto_futuro;
 public class Proyecto_futuro {
 
     public static void main(String[] args) { 
-        String nombre=args[0];
-        String modulos=args[1];
-        String horasSemana=args[2];
 
         
-        System.out.println("Estudiante " + nombre + " : ");
-        System.out.println(veredicto(modulos,horasSemana));
+        System.out.println("Estudiante " + args[0] + " : ");
+        System.out.println(veredicto(args[1],args[2]));
     }
     private static String veredicto(String valor1, String valor2) {
         if (valor1.equals(valor2)) {
